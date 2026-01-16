@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yash | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="app">
+    <nav class="navbar">
+      <div class="logo">Yash.</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="profile-container">
+          <img src="./assets/img/profile.jpg" alt="Yash" class="hero-profile-img">
+        </div>
+        <h1 class="hero-title">Hello, I'm <span class="highlight">Yash</span></h1>
+        <p class="hero-subtitle">Building digital experiences that matter.</p>
+        <a href="#projects" class="btn primary-btn">View My Work</a>
+      </div>
+      <div class="hero-visual">
+        <!-- Abstract Circle Animation purely with CSS -->
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>I am a passionate developer who loves creating beautiful and functional websites. I focus on writing
+              clean, efficient code and designing user-friendly interfaces.</p>
+            <p>When I'm not coding, I'm exploring new technologies or working on personal projects to sharpen my skills.
+            </p>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-card">Electronic & Embedded systems</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">C</div>
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">React (Learning)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">My Project</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image" style="background: linear-gradient(45deg, #ff6b6b, #556270);"></div>
+            <div class="project-info">
+              <h3>SCARA</h3>
+              <p>Scara, It is a advanced and better version of an Pick and Place robot. </p>
+              <div class="project-links">
+                <a href="#" class="link">View Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image" style="background: linear-gradient(45deg, #4ecdc4, #556270);"></div>
+            <div class="project-info">
+              <h3>Portfolio Website</h3>
+              <p>This website! Built with performance and design in mind.</p>
+              <div class="project-links">
+                <a href="#" class="link">View Code</a>
+              </div>
+            </div>
+          </div>
+          <!-- Add more projects here -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-text">Have a project in mind or just want to say hi? Feel free to drop me a message.</p>
+        <a href="mailto:yashh" class="btn secondary-btn">Say Hello</a>
+        <div class="social-links">
+
+          <a href="https://linkedin.com/in/yash-harwani-airobo" target="_blank">LinkedIn</a>
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Yash. All rights reserved.</p>
+    </footer>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
