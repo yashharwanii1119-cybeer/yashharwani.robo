@@ -14,6 +14,20 @@ const navSlide = () => {
 }
 
 // Smooth scrolling for anchor links
+const menuIcon = document.getElementById("menuIcon");
+const navLinks = document.getElementById("navLinks");
+
+menuIcon.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
+// Close menu after clicking any link
+document.querySelectorAll("#navLinks a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+  });
+});
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -36,3 +50,4 @@ const app = () => {
 }
 
 app();
+
