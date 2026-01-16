@@ -30,17 +30,17 @@ body {
 
 /* Navbar */
 .navbar {
+  width: 100%;
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  padding: 14px 20px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 5%;
-  background-color: var(--nav-bg);
-  backdrop-filter: blur(10px);
-  z-index: 1000;
-  transition: var(--transition);
+  z-index: 999;
 }
 
 .logo {
@@ -527,3 +527,69 @@ footer {
     /* Full width on very small screens */
   }
 }
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  color: white;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+/* HERO FIX (removes huge top space) */
+.hero-section {
+  min-height: 100vh;
+  padding-top: 80px; /* navbar space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 12px;
+    padding: 15px;
+    flex-direction: column;
+    gap: 15px;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* About section fix */
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  /* Skills box center */
+  .skills-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
